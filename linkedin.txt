@@ -1,0 +1,25 @@
+🤖 I built an AI to write jokes. It completely failed at comedy, but succeeded at Deep Learning.
+
+I wanted to understand how Large Language Models actually work under the hood, so I built an NLP text generator from scratch using a Stacked LSTM in TensorFlow.
+
+The Architecture:
+I trained it on a dataset of jokes, using a vocabulary of 23,656 words. The pipeline goes:
+Text -> Tokenization -> Padding -> Embedding Layer -> Two Stacked LSTMs -> Dense Softmax Output.
+
+The model learned to predict the next word with ~33% accuracy (which is incredibly hard when you have 23,000 possible words to choose from!).
+
+The Result?
+Instead of stand-up comedy, it generated surrealist poetry. Here is an actual joke it wrote:
+
+"Why did the chicken go to the bathroom in a plane in the morning a tree to be to the most of the same"
+
+😂 It perfectly learned English grammar and sentence structure, but has absolutely zero concept of a punchline.
+
+What I learned:
+Building this from scratch taught me exactly why the industry moved away from LSTMs and toward Transformers (like GPT) for text generation. LSTMs forget the beginning of long sentences, while Transformers use "Attention" to see the whole picture.
+
+Next step: upgrading this to a Transformer architecture to see if I can finally get a real punchline.
+
+Code and full breakdown on my GitHub! 👇
+
+#MachineLearning #DeepLearning #NLP #TensorFlow #LSTM #AI #BuildInPublic
