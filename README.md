@@ -23,7 +23,6 @@ An end-to-end Natural Language Processing (NLP) project built from scratch using
 1. **Clone the repo:**
    ```bash
    git clone https://github.com/DhamzBonaparte/AI-Joke-Generator-LSTM.git
-   cd AI-Joke-Generator-LSTM
    ```
 
 2. **Install requirements:**
